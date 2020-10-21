@@ -20,24 +20,36 @@ module.exports.freshGame = () => {
  
     const start = {
         white : {
-            rook : {
-                coordinates1: "01",
-                alive: 1,
-                coordinates2: "08",
-                alive2: 1,
+            rooks : {
+                right:{
+                    coordinates: "01",
+                    alive: 1,
+                },
+                left :{
+                    coordinates: "08",
+                    alive: 1,
+                }
             },
-            knight : {
-                coordinates1: "02",
-                alive: 1,
-                coordinates2: "07",
-                alive2: 1,
+            knights : {
+                right:{
+                    coordinates: "02",
+                    alive: 1,
+                },
+                left : {
+                    coordinates: "07",
+                    alive: 1,
+                }
             },
                        
-            bishop : {
-                coordinates1: "03",
-                alive: 1,
-                coordinates2: "06",
-                alive2: 1,
+            bishops : {
+                left:{
+                    coordinates: "03",
+                    alive: 1,
+                },
+                right: {
+                    coordinates: "06",
+                    alive: 1,
+                }
             },
             queen : {
                 coordinates: "04",
@@ -50,31 +62,43 @@ module.exports.freshGame = () => {
             white_pawn : pawn
         },
         black: {
-            rook: {
-                coordinates1: "71",
-                alive: true,
-                coordinates2: "78",
-                alive2: true,
+            rooks: {
+                right: {
+                    coordinates: "71",
+                    alive: 1,
+                },
+                left : {
+                    coordinates: "78",
+                    alive: 1,
+                },
             },
-            knight : {
-                coordinates1: "72",
-                alive: true,
-                coordinates2: "77",
-                alive2: true,
+            knights : {
+                right: {
+                    coordinates: "72",
+                    alive: 1,
+                },
+                left: {
+                    coordinates: "77",
+                    alive: 1,
+                }
             },
-            bishop : {
-                coordinates1: "73",
-                alive: true,
-                coordinates2: "76",
-                alive2: true,
+            bishops : {
+                right:{
+                    coordinates: "73",
+                    alive: 1,
+                },
+                left : {
+                    coordinates: "76",
+                    alive2: 1,
+                }
             },
             queen : {
                 coordinates: "74",
-                alive: true,
+                alive: 1,
             },
             king :  {
                 coordinates: "75",
-                alive: true,
+                alive: 1,
             },
             black_pawn : pawn
         }
