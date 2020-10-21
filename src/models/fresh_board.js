@@ -104,9 +104,6 @@ module.exports.freshGame = () => {
         }
     };
 
-
-
-
     //console.log(JSON.stringify(fresh_board));
     return JSON.stringify(start)
 };
