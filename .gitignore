@@ -1,0 +1,8 @@
+node_modules
+src/config.js
+package-lock.json
+logs
+src/daos/recibo_change.sql
+src/lib/transfer.sql
+src/controller/tables_ted.sql
+src/lib/SELECT.sql
